@@ -8,9 +8,9 @@ const Portfolio = () => {
   return (
     <AnimatePage>
       <div className='page-work'>
-        <h4 className="page-work__heading">
-          Working experience highlights
-        </h4>
+        <p className="page-work__heading">
+          Working experience
+        </p>
         <div className="page-work__container">
           <div className="page-work__box page-work__item--1">
             <div className="page-work__box--heading">

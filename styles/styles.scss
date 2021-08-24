@@ -57,12 +57,17 @@ $bp-smallest: 31.25em; // 500px/16
     flex-direction: column;
     margin-top: 22rem;
     margin-left: 8rem;
+    
+
+    @media only screen and(max-width: 30rem) {
+      font-size: 4rem;
+      margin-left: 4rem;
+    }
 
     &--heading {
       font-size: 8rem;
       font-weight: 600;
       font-family: 'Poppins';
-      word-spacing: 1.5rem;
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -82,7 +87,7 @@ $bp-smallest: 31.25em; // 500px/16
       font-size: 1.5rem;
 
       @media only screen and(max-width: $bp-smallest) {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
 
