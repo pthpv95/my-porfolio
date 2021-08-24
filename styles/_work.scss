@@ -1,0 +1,94 @@
+.page-work {
+  padding: 7rem;
+  background-color: $background-color-light;
+  height: 100vh;
+  &__heading {
+    font-size: 3rem;
+    margin: 2rem;
+    color: #fff;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: repeat(2fr);
+  }
+
+  &__box {
+    background-color: $background-color-dark;
+    border-radius: .2rem;
+    border: 1px solid #1f1e1e;
+    padding: 3rem;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--heading {
+      display: flex;
+    }
+
+    &--title {
+      color: $primary-color;
+      font-size: 2rem;
+      font-weight: 500;
+      margin-right: auto;
+    }
+
+    &--timeline {
+      color: $primary-text-color;
+      font-size: 1.5rem;
+      display: flex;
+      background-color: #1f1e1e;
+      align-self: center;
+      border-radius: 10px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
+
+    &--description {
+      color: $primary-text-color;
+      font-size: 1.2rem;
+    }
+
+    &--tech {
+      font-weight: 300;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__item {
+    &--1 {
+      grid-column: 1/1;
+      grid-row: 1/1;
+    }
+
+    &--2 {
+      grid-column: 2/2;
+      grid-row: 1/1;
+    }
+
+    &--3 {
+      grid-column: 1/1;
+      grid-row: 2/2;
+    }
+
+    &--4 {
+      grid-column: 2/2;
+      grid-row: 2/2;
+    }
+  }
+
+  &__timeline {
+    height: 90%;
+    width: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,134 @@
+.skill-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: $background-color-light;
+  height: 100vh;
+
+  &__left {
+    grid-column: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7rem;
+
+    &--heading {
+      font-size: 5rem;
+      color: $primary-color;
+      line-height: 5px;
+    }
+
+    &--description {
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &__level {
+    padding: 1rem;
+
+    label {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    &--be {
+      margin-top: 1rem;
+      width: 40vw;
+
+      &::before {
+        display: block;
+        height: 2px;
+        content: '';
+        background-color: $primary-text-color;
+        float: right;
+        width: 25%;
+      }
+
+      &::after {
+        display: block;
+        width: 75%;
+        height: 2px;
+        content: '';
+        background-color: rgb(0, 255, 13);
+        float: left;
+      }
+    }
+    &--fe {
+      margin-top: 1rem;
+      width: 40vw;
+
+      &::before {
+        display: block;
+        height: 2px;
+        content: '';
+        background-color: $primary-text-color;
+        float: right;
+        width: 20%;
+      }
+
+      &::after {
+        display: block;
+        width: 80%;
+        height: 2px;
+        content: '';
+        background-color: rgb(255, 0, 191);
+        float: left;
+        animation: all .5;
+      }
+    }
+    &--react {
+      margin-top: 1rem;
+      width: 40vw;
+
+      &::before {
+        display: block;
+        height: 2px;
+        content: '';
+        background-color: $primary-text-color;
+        float: right;
+        width: 15%;
+      }
+
+      &::after {
+        display: block;
+        width: 85%;
+        height: 2px;
+        content: '';
+        background-color: #61dafb;
+        float: left;
+      }
+    }
+
+    &--node {
+      margin-top: 1rem;
+      width: 40vw;
+
+      &::before {
+        display: block;
+        height: 2px;
+        content: '';
+        background-color: $primary-text-color;
+        float: right;
+        width: 30%;
+      }
+
+      &::after {
+        display: block;
+        width: 70%;
+        height: 2px;
+        content: '';
+        background-color: #84ba64;
+        float: left;
+      }
+    }
+  }
+}
