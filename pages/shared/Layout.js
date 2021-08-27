@@ -14,6 +14,7 @@ const Layout = ({ children }) => {
       <Head>
         <title>HIEN PHAM | Web developer </title>
         <link rel="icon" href="/assets/img/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1" />
       </Head>
       <Navigation />
       <div className="main-menu">
