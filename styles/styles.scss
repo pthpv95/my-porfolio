@@ -20,9 +20,15 @@ a {
 
 $primary-text-color: #909096;
 $primary-color: #00e3aa;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+$color-white: #fff;
+$color-black: #000;
 $background-color-light: #1d1d1d;
 $background-color-dark: #181818;
-$bp-smallest: 47em; // 500px/16
+$color-grey-dark-3: #333;
+
+$bp-smallest: 37.5em; // 500px/16
 
 ::-webkit-scrollbar {
   width: 0;
@@ -30,9 +36,12 @@ $bp-smallest: 47em; // 500px/16
   background: transparent;
 }
 
+@import 'mixins';
 @import 'skill';
 @import 'about';
 @import 'work';
+@import 'navigation';
+
 
 .container {
   display: grid;
@@ -53,15 +62,19 @@ $bp-smallest: 47em; // 500px/16
 
   &__introduction {
     display: flex;
-    height: 70vh;
     flex-direction: column;
-    margin-top: 22rem;
+    margin-top: 24rem;
     margin-left: 8rem;
-    
 
-    @media only screen and(max-width: 30rem) {
+    @media only screen and(max-width: $bp-smallest) {
+      margin-top: 20rem;
+      height: 70vh;
       font-size: 4rem;
       margin-left: 4rem;
+    }
+
+    @media only screen and(max-height: 50rem) {
+      margin-top: 18rem;
     }
 
     &--heading {
@@ -73,7 +86,7 @@ $bp-smallest: 47em; // 500px/16
       flex-direction: column;
       margin-bottom: 1.5rem;
 
-      @media only screen and(max-width: 30rem) {
+      @media only screen and(max-width: $bp-smallest) {
         font-size: 4rem;
         line-height: 6rem;
       }
@@ -182,8 +195,6 @@ $bp-smallest: 47em; // 500px/16
       &:hover {
         cursor: pointer;
         color: $primary-color;
-        //#00e3aa
-        // 0072B5
       }
 
       &:first-child {

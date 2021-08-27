@@ -1,29 +1,4 @@
-@mixin level($color, $percent) {
-  margin-top: 1rem;
-  width: 40vw;
 
-  @media only screen and(max-width: $bp-smallest) {
-    width: 100vw;
-  }
-
-  &::before {
-    display: block;
-    height: 2px;
-    content: '';
-    background-color: $primary-text-color;
-    float: right;
-    width: 100% - $percent;
-  }
-
-  &::after {
-    display: block;
-    width: $percent;
-    height: 2px;
-    content: '';
-    background-color: $color;
-    float: left;
-  }
-}
 
 .skill-page {
   display: grid;
@@ -82,6 +57,7 @@
 
   &__level {
     padding: 2rem;
+    margin-right: 1rem;
     label {
       font-size: 2rem;
       font-weight: 600;

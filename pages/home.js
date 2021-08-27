@@ -6,7 +6,7 @@ import Skills from './skills';
 const Home = () => {
   const [runningText, setRunningText] = useState('I build ')
   const [isRunning, setIsRunning] = useState(false)
-  const content = ['web interfaces.', 'automation tool.', 'design mockup.', 'design backend system.'];
+  const content = ['web interfaces.', 'automation tool.', 'design mockup.', 'backend system.'];
   const { isMounted } = useIsMounted()
 
   function timeout(ms) {
