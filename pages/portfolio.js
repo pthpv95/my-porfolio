@@ -1,10 +1,7 @@
 import React from 'react';
-import { motion } from "framer-motion";
-import { useRouter } from 'next/router';
 import AnimatePage from './shared/component/AnimatePage';
 
 const Portfolio = () => {
-  const router = useRouter()
   return (
     <AnimatePage>
       <div className='page-work'>
@@ -40,13 +37,13 @@ const Portfolio = () => {
               </p>
             </div>
             <p className="page-work__box--description">
-              • Working as fullstack developer.
+              • Build front office for a cross-border payment platform for businesses to make payment overseas.
             </p>
             <p className="page-work__box--description">
               • Build web interfaces that are fast, easy to use and built with best practice.
             </p>
             <p className="page-work__box--description">
-              • Design BE system to support multi-tenant.
+              • Implement enhancements that improved web functionality and responsiveness.
             </p>
             <h3 className="page-work__box--tech">
               Technical:  ReactJS, Typescript, Material UI
@@ -60,13 +57,13 @@ const Portfolio = () => {
               </p>
             </div>
             <p className="page-work__box--description">
-              • Working as fullstack developer.
+              • Make the detailed designs for assigned tasks
             </p>
             <p className="page-work__box--description">
-              • Build web interfaces that are fast, easy to use and built with best practice.
+              • Perform full unit test on the assigned tasks
             </p>
             <p className="page-work__box--description">
-              • Design BE system to support multi-tenant.
+              • Writing and implementing efficient and secure code;
             </p>
             <p className="page-work__box--tech">
               Technical: .NET CORE, Microservices, ReactJS, AWS
@@ -89,7 +86,7 @@ const Portfolio = () => {
               • Design BE system to support multi-tenant.
             </p>
             <h3 className="page-work__box--tech">
-              Technical: Reactjs,, Nodejs, Webpack, Docker, Cordova, Jenkins, Jest
+              Technical: Reactjs, Nodejs, Webpack, Docker, Cordova, Jenkins, Jest
             </h3>
           </div>
         </div>

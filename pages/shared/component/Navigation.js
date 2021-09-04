@@ -8,10 +8,10 @@ const Navigation = () => {
     checkboxRef.current.click()
     router.push(path)
   }
-  
+
   return (
     <div className="navigation">
-      <input type="checkbox" className="navigation__checkbox" id="navi-toggle" ref={checkboxRef}/>
+      <input type="checkbox" className="navigation__checkbox" id="navi-toggle" ref={checkboxRef} />
       <label htmlFor="navi-toggle" className="navigation__button">
         <span className="navigation__icon">&nbsp;</span>
       </label>
@@ -30,6 +30,14 @@ const Navigation = () => {
           </li>
           <li className="navigation__item">
             <a href="#" className="navigation__link" onClick={() => onLinkClicked('/portfolio')}>Work</a>
+          </li>
+          <li className="navigation__item">
+            <a href="#" className="navigation__link" onClick={() => {
+              window.open(
+                'https://drive.google.com/file/d/1CiK5L1Kz8qOvfoWK85nQj4lMG-uFUb9A/view',
+                '_blank'
+              );
+            }}>Resume</a>
           </li>
         </ul>
       </nav>

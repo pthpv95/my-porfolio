@@ -37,6 +37,12 @@ const Layout = ({ children }) => {
           <div onClick={() => {
             router.push('/portfolio')
           }}>Work</div>
+           <div onClick={() => {
+            window.open(
+              'https://drive.google.com/file/d/1CiK5L1Kz8qOvfoWK85nQj4lMG-uFUb9A/view',
+              '_blank'
+            );
+          }}>Resume</div>
         </div>
         <div className="main-menu__social">
           <div className="main-menu__social--item">
