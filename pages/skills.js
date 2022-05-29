@@ -12,7 +12,7 @@ const Skills = () => {
             </span>
           </p>
           <p className="skill-page__left--description">
-            I have been working as fullstack developer for <b>4 years </b> developing robust software for high-volume businesses.
+            I have been working as fullstack developer for <b>5 years </b> developing robust software for high-volume businesses.
           </p>
           <p className="skill-page__left--description">
             I have successfully deliver a lot of projects that fast, provide great user experience follow best practices.

@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
           }}>Work</div>
            <div onClick={() => {
             window.open(
-              'https://drive.google.com/file/d/1CiK5L1Kz8qOvfoWK85nQj4lMG-uFUb9A/view',
+              'https://drive.google.com/file/d/1iLxZJ82Isg7YokzshLotPnSdDO3VOSYA/view',
               '_blank'
             );
           }}>Resume</div>

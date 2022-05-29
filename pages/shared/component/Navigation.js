@@ -34,7 +34,7 @@ const Navigation = () => {
           <li className="navigation__item">
             <a href="#" className="navigation__link" onClick={() => {
               window.open(
-                'https://drive.google.com/file/d/1CiK5L1Kz8qOvfoWK85nQj4lMG-uFUb9A/view',
+                'https://drive.google.com/file/d/1iLxZJ82Isg7YokzshLotPnSdDO3VOSYA/view',
                 '_blank'
               );
             }}>Resume</a>
